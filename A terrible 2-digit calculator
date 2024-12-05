@@ -1,0 +1,52 @@
+#include <cs50.h>
+#include <stdio.h>
+
+float add(float a, float b);
+float sub(float a, float b);
+float mult(float a, float b);
+float div(float a, float b);
+char calc(char c);
+
+int main(void)
+{
+    float x = get_float("x: "); //First digit to be operated, minuend, dividend
+    float y = get_float("y: "); //Second digit to be operated, subtrahend, divisor
+    char c = get_char("Function: "); //Allows user to pick addition, subtraction, multiplication, and division
+
+    if (c == 'a')
+    {
+        printf("%f\n", add(x, y));
+    }
+    else if (c == 's')
+    {
+        printf("%f\n", sub(x, y));
+    }
+    else if (c == 'm')
+    {
+        printf("%f\n", mult(x, y));
+    }
+    else if (c == 'd')
+    {
+        printf("%f\n", div(x, y));
+    }
+}
+
+float add(float a, float b) //defines addition
+{
+    return a + b;
+}
+
+float sub(float a, float b) //defines subtraction
+{
+    return a - b;
+}
+
+float mult(float a, float b) //defines multiplication
+{
+    return a * b;
+}
+
+float div(float a, float b) //defines division
+{
+    return a / b;
+}
