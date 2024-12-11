@@ -1,10 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int calculate_quarters(int remaining_cents);
-int calculate_dimes(int remaining_cents);
-int calculate_nickels(int remaining_cents);
-int calculate_pennies(int remaining_cents);
+int calculate_quarters(int remaining_cents), calculate_dimes(int remaining_cents), calculate_nickels(int remaining_cents), calculate_pennies(int remaining_cents);
 
 int main(void)
 {
@@ -78,3 +75,4 @@ int calculate_pennies(int remaining_cents)
     }
     return pennies;
 }
+
